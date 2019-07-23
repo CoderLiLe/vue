@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 注意：不推荐直接在这里引用任何包 和 任何CSS文件 -->
+
+    <!-- 因为 main 中的代码涉及到了 ES6 中的新语法，浏览器不识别 -->
+    <!--<script src="main.js"></script>-->
+
+    <!-- 通过 webpack 这么一个前端构建工具，把 main.js 做了以下处理，生成了一个 bundle.js 的文件 -->
+    <!--<script src="../dist/bundle.js"></script>-->
+
+    <!-- 当使用 html-webpack-plugin 之后，我们不再需要手动处理 bundle.js 的引用路径了，因为这个插件已经帮助我们自动创建了一个合适的 script，并且引用了正确的路径 -->
+    <!-- <script src="/bundle.js"></script> -->
+
+    <!-- css 会发起第二次请求，不推荐这么做 -->
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> -->
+</head>
+<body>
+    <ul>
+        <li>这是第 1 个 li 标签</li>
+        <li>这是第 2 个 li 标签</li>
+        <li>这是第 3 个 li 标签</li>
+        <li>这是第 4 个 li 标签</li>
+        <li>这是第 5 个 li 标签</li>
+        <li>这是第 6 个 li 标签</li>
+    </ul>
+
+    <div class="box"></div>
+    <div class="box2"></div>
+
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+</body>
+</html>
